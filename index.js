@@ -109,8 +109,8 @@ function request(options, callback) {
         if (obj.hasOwnProperty(p)) {
             lines.push(
                 '--'+result.boundry+"\n"+
-                'Content-Disposition: form-data; name="'+p+'"'+"\n"+
-                "\n"+
+                'Content-Disposition: form-data; name="'+p+'"'+"\r\n"+
+                "\r\n"+
                 obj[p]+"\n"
             );
         }
